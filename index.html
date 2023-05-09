@@ -13,6 +13,7 @@
     body{
       margin: 0px;
       font-family: roboto;
+      background-image: linear-gradient(to right, #434343 0%, black 100%);
     }
 
     .logo {
@@ -65,15 +66,14 @@
       text-decoration: none;
     } 
     .enunt {
-      margin-left: 7%;
-      color: black;
+      margin-left: 3%;
     }
    
     .container {
       position:relative;
       justify-content: left;
-      height: 500px;
       margin: 10px;
+      
     }
 
     .container .content {
@@ -86,10 +86,10 @@
     }
 
     .check {
-      position: relative;
+      position: fixed;
       width: 50px;
-      position: relative;
-      top: -5px;
+      right: 90px;
+      bottom: 180px;
     }
 
     .check::before {
@@ -132,22 +132,27 @@
 
     .ro {
       color: #333;
-      margin-right: 5px;
+      position: fixed;
+      right: 150px;
+      bottom: 170px;
     }
 
     .fr {
       color: #00a1ff;
-      margin-left: 13px;
+      position: fixed;
+      right: 10px;
+      bottom: 170px;
     }
 
     .div-body {
-      display: flex;
+      display: inline-block;
       justify-content: left;
-      min-height: 1000px;
-      background: #f2f2f2;
+      min-height: 2000px;
+      width: 100%;
       overflow: hidden;
       position: relative;
       font-family: roboto;
+      background-image: linear-gradient(to left, #fc5c7d, #6a82fb);
     }
     
     .content-title {
@@ -155,7 +160,7 @@
     }
 
     .marime {
-      font-size: 25px;
+      font-size: 30px;
     }
     
     .tabel {
@@ -164,6 +169,60 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    
+    .button-2 {
+      position: fixed;
+      right: 10px;
+      bottom: 110px;
+      padding: 0px;
+      background-color: rgb(28, 55, 110);
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .button-3 {
+      position: fixed;
+      right: 10px;
+      bottom: 30px;
+      padding: 0px;
+      background-color: rgb(28, 55, 110);
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    .button-color-1 {
+      color: white;
+      text-decoration: none;
+      border-style: solid;
+      border-color: black;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-width: 2px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: roboto;
+      background-color: rgb(28, 55, 110);
+    }
+
+    .background-dreapta {
+      
+    }
+
+    .titlu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 45px;
+      margin-bottom: 30px;
     }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -184,105 +243,253 @@
     </div>
     <div class="div-body">
       <div class="container">
-            <span class="ro">Romana</span>
-            <input type="checkbox" class="check">
-            <span class="fr">Franceza</span>
+          <div class="background-dreapta">
+            <span></span>
+          </div>
+          <span class="ro">Romana</span>
+          <input type="checkbox" class="check">
+          <span class="fr">Franceza</span>
+          <button class="button-2">
+            <a class="button-color-1" href="#Adjective nehotarate">Adjective nehotarate</a>
+          </button>
+          <button class="button-3">
+            <a class="button-color-1" href="#Pronume nehotărât">Pronume nehotărât</a>
+          </button>
           <div class="content contentRomana">
+            <div class="titlu">
+              <h1><b>Adjectivele si pronumele nehotarate</b></h1>
+            </div>
             <div class="content-container-title">
-              <div class="content-title" ><h1></h1></div>
+              <div id="Adjective nehotarate" class="content-title"><h1><u>1. Adjective nehotarate</u></h1></div>
             </div>
             <div class="content-1">
+              <div class="marime">
+                <p>Adjectivele nehotarate exprimă <b>cantitate</b>. Cantitatea se exprimă cu adjectivele nehotărâte <b>unii, mai mulți, unii, alții, fiecare și totul.</b></p>
+                <p><u>Exemples :</u></p>
+                <p>- În clasa mea, predau unor studenți italieni. (= un număr mic)</p>
+                <p>- În clasa mea, predau pentru mai mulți studenți spanioli. (= un număr mai mare)</p>
+                <p>- În clasa mea, predau unor studenți englezi și niște studenți americani. (parte dintr-un set)</p>
+                <p>- În clasa mea, predau pentru fiecare elev.(= un anumit elev)</p>
+                <p>- În clasa mea, predau pentru toți elevii. (= întregul)</p>
+                <p>- Predau pentru toată clasa. (= totalitatea indivizilor dintr-un set)</p>
+                <p><u>Atentie</u>!</p>
+                <p>Adjectivul <b>tout</b> este de acord ca gen și număr cu substantivul la care se referă.</p>
+              </div>
+              <div class="tabel">
+                <table bgcolor="black";>
+                  <tr bgcolor="gray">
+                    <th><span></span></th>
+                    <th width="400px"; align="center">singular</th>
+                    <th width="400px"; align="center">plural</th>
+                  </tr>
+                  <tr bgcolor="lightgrey"
+                      align="left">
+                      <th width="400px"; align="center">
+                        <p>masculin</p>
+                      </th>
+                      <th width="400px"; align="center">
+                        <p>toate</p>
+                      </th>
+                      <th width="400px"; align="center">
+                        <p>toate</p>
+                      </th>
+                  </tr>
+                  <tr bgcolor="lightgrey"
+                      align="left">
+                      <th width="400px"; align="center">
+                        <p>féminin</p>
+                      </th>
+                      <th width="400px"; align="center">
+                        <p>toate</p>
+                      </th>
+                      <th width="400px"; align="center">
+                        <p>toate</p>
+                      </th>
+                </table>
+              </div>
+              <div class="marime">
+              <p><u>Exemple</u>:</p>
+              <p>Predau pentru<b> toată clasa , pentru toata lume , pentru toti elevii.</b></p>
               <div class="content-container-title">
-                <div class="content-title" ><h1><u>Adjectivele si pronumele nehotarate</u></h1></div>
+                <div id="Pronume nehotărât" class="content-title" ><h1><u>2. Pronume nehotărât</u></h1></div>
               </div>
-             <div class="marime">
-                <p><span class="enunt-1">Articolele</span> nehotărâte sunt <strong>un</strong> (masculin singular), <strong>une</strong> (feminin singular) și <strong>des</strong> (masculin, feminin plural). Articolul nehotărât este de acord ca număr și (pentru formele de singular) în gen cu substantivele pe care le modifică (vezi Substantive):</p>
-                <p><u><b>Exemple :</b></u></p>
-                <p>- Este un fruct.</p>
-                <p>- Este un măr.</p>
-                <p>- E brutar.</p>
-                <p>- Bună, aș dori o baghetă, cornuri și o brioșă, vă rog.</p>
-                <p>- Lucrează într-o brutărie mare.</p>
+              <p>Pronumele nehotărât înlocuiesc adjectivul nehotărât și substantivul .</p>
+              <div class="tabel">
+                <table bgcolor="black";>
+                  <tr bgcolor="gray">
+                    <th width="400px"; align="center">Cu adjectiv nehotărât + substantiv</th>
+                    <th width="400px"; align="center">Cu pronume nehotărât</th>
+                  </tr>
+                  <tr bgcolor="lightgrey"
+                      align="left">
+                      <th width="400px"; align="center">
+                        <p>Unii studenți sunt italieni, iar
+                          unii studenți sunt spanioli.</p>
+                      </th>
+                      <th width="400px"; align="center">
+                        <p><u>Unele</u> sunt italiene și
+                          <u>altele</u> spaniole.</p>
+                      </th>
+                  </tr>
+                  <tr bgcolor="lightgrey"
+                      align="left">
+                      <th width="400px"; align="center">
+                        <p>Mai mulți studenți sunt spanioli.</p>
+                      </th>
+                      <th width="400px"; align="center">
+                        <p><u>Mulți</u> sunt spanioli.</p>
+                      </th>
+                  </tr>
+                  <tr bgcolor="lightgrey"
+                      align="left">
+                      <th width="400px"; align="center">
+                        <p>Unii studenți sunt englezi, iar
+                          alții americani.</p>
+                      </th>
+                      <th width="400px"; align="center">
+                        <p><u>Unii</u> sunt englezi, iar
+                          <u>alții</u> americani.</p>
+                      </th>
+                  </tr>
+                  <tr bgcolor="lightgrey"
+                      align="left">
+                      <th width="400px"; align="center">
+                        <p>Fiecare student este studios.</p>
+                      </th>
+                      <th width="400px"; align="center">
+                        <p><u>Toți</u> sunt studioși.</p>
+                      </th>
+                  </tr>
+                  <tr bgcolor="lightgrey"
+                      align="left">
+                      <th width="400px"; align="center">
+                        <p>Toți studenții sunt studioși.</p>
+                      </th>
+                      <th width="400px"; align="center">
+                        <p><u>Toți</u> sunt studioși.</p>
+                      </th>
+                  </tr>
+                </table>
               </div>
-            </div>
-            <div class="tabel">
-              <table bgcolor="black";>
-                <tr bgcolor="gray">
-                  <th><span></span></th>
-                  <th width="400px"; align="center">masculin</th>
-                  <th width="400px"; align="center">féminin</th>
-                </tr>
-                <tr bgcolor="lightgrey"
-                    align="left">
-                    <th width="400px"; align="center">
-                      <p>singulier</p>
-                    </th>
-                    <th width="400px"; align="center">
-                      <p>un</p>
-                    </th>
-                    <th width="400px"; align="center">
-                      <p>une</p>
-                    </th>
-                </tr>
-                <tr bgcolor="lightgrey"
-                    align="left">
-                    <th width="400px"; align="center">
-                      <p>pluriel</p>
-                    </th>
-                    <th width="400px"; align="center">
-                      <p>des</p>
-                    </th>
-                    <th width="400px"; align="center">
-                      <p>des</p>
-                    </th>
-              </table>
+              </div>
             </div>
           </div>
         <div class="content contentFranceza">
+          <div class="titlu">
+            <h1><b>Les indefinis</b></h1>
+          </div>
           <div class="content-container-title">
-            <div class="content-title" ><h1><u>Les indéfinis</u></h1></div>
+            <div class="content-title" ><h1><u>1. Les adjectifs indéfinis</u></h1></div>
           </div>
           <div class="content-1">
             <div class="marime">
-              <p><span class="enunt-1">Les</span> articles indéfinis sont <strong>un</strong> (masculin singulier), <strong>une</strong> (féminin singulier) et <strong>des</strong> (masculin, féminin pluriel). L'article indéfini s'accorde en nombre et (pour les formes singulières) en genre avec les noms qu'ils modifient (voir Noms) :</p>
-              <p><u><b>Exemples :</b></u></p>
-              <p>- C'est un fruit.</p>
-              <p>- C'est une pomme.</p>
-              <p>- C'est un boulanger.</p>
-              <p>- Bonjour, je voudrais une baguette, des croissants et une brioche, s'il vous plait.</p>
-              <p>- Il travaille dans une grande boulangerie.</p>
+              <p><span class="enunt">Les</span> adjectifs indéfinis expriment <b>la quantité</b>. La quantité s'exprime avec les adjectifs indéfinis <b>quelques, plusieurs, certains, d'autres, chaque, et tout.</b></p>
+              <p><u>Exemples :</u></p>
+              <p>- Dans ma classe, j'enseigne pour <b>quelques</b> étudiants italiens. (= un petit nombre)</p>
+              <p>- Dans ma classe, j'enseigne pour <b>plusieurs</b> étudiants espagnols. (= un nombre plus important)</p>
+              <p>- Dans ma classe, j'enseigne pour <b>certains</b> étudiants anglais et à d'autres étudiants américains. (une partie d'un ensemble).</p>
+              <p>- Dans ma classe, j'enseigne pour <b>chaque</b> étudiant. (= un étudiant en particulier)</p>
+              <p>- Dans ma classe, j'enseigne pour <b>tous</b> les étudiants. (= la totalité)</p>
+              <p>- J'enseigne à <b>toute</b> la classe. (= totalité des individus dans un ensemble)</p>
+              <p><u>Attention</u>!</p>
+              <p>L'adjectif <b>tout</b> s'accorde en genre et en nombre avec le nom auquel il se rapporte.</p>
             </div>
             <div class="tabel">
               <table bgcolor="black";>
                 <tr bgcolor="gray">
                   <th><span></span></th>
-                  <th width="400px"; align="center">masculin</th>
-                  <th width="400px"; align="center">féminin</th>
+                  <th width="400px"; align="center">singulier</th>
+                  <th width="400px"; align="center">pluriel</th>
                 </tr>
                 <tr bgcolor="lightgrey"
                     align="left">
                     <th width="400px"; align="center">
-                      <p>singulier</p>
+                      <p>masculin</p>
                     </th>
                     <th width="400px"; align="center">
-                      <p>un</p>
+                      <p>tout</p>
                     </th>
                     <th width="400px"; align="center">
-                      <p>une</p>
+                      <p>tous</p>
                     </th>
                 </tr>
                 <tr bgcolor="lightgrey"
                     align="left">
                     <th width="400px"; align="center">
-                      <p>pluriel</p>
+                      <p>féminin</p>
                     </th>
                     <th width="400px"; align="center">
-                      <p>des</p>
+                      <p>toute</p>
                     </th>
                     <th width="400px"; align="center">
-                      <p>des</p>
+                      <p>toutes</p>
                     </th>
               </table>
+            </div>
+            <div class="marime">
+            <p><u>Exemples</u>!</p>
+            <p>J'enseigne pour<b>toute la classe, à tout le monde, à tous les étudiants et à toutes</b> les étudiantes.</p>
+            <div class="content-container-title">
+              <div class="content-title" ><h1><u>2. Les pronoms indéfinis</u></h1></div>
+            </div>
+            <p>Les pronoms indéfinis remplacent l'adjectif indéfini et le nom.</p>
+            <div class="tabel">
+              <table bgcolor="black";>
+                <tr bgcolor="gray">
+                  <th width="400px"; align="center">Avec adjectif indéfini + nom</th>
+                  <th width="400px"; align="center">Avec pronom indéfini</th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Quelques étudiants sont italiens et
+                        quelques étudiantes sont espagnoles.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Quelques-uns</u> sont italiens et
+                        quelques-unes sont espagnoles.</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Plusieurs étudiants sont espagnols.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Plusieurs</u> sont espagnols.</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Certains étudiants sont anglais et
+                        d'autres étudiants sont américains.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Certains</u> sont anglais et 
+                        <u>d'autres</u> sont américains.</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Chaque étudiant est studieux.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Chacun</u> est studieux.</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Tous les étudiants sont studieux.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Tous</u> sont studieux.</p>
+                    </th>
+                </tr>
+              </table>
+            </div>
             </div>
           </div>
         </div>
