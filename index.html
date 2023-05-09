@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      font-family: roboto;
+    }
+    body{
+      margin: 0px;
+      font-family: roboto;
+    }
+
+    .logo {
+      padding-bottom: 10px;
+      margin-left: 10px;
+    }
+
+    .button:hover {
+     background-color: white;
+     border-width: 2px;
+    }
+
+    .button-color:hover {
+      color: rgba(0,0,0,2);
+      font-size: 30px;
+    }
+
+    .button-color {
+      color: white;
+      text-decoration: none;
+      border-style: solid;
+      box-shadow: 8px 4px; 
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-width: 2px;
+      height: 200px;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: roboto;
+      background-color: rgb(28, 55, 110);
+    }
+      
+    .header {
+      background-color: rgba(17, 40, 85);
+      display:flex;
+      align-items: center;
+    }
+
+    .button-1 {
+      padding: 0px;
+      background-color: rgb(28, 55, 110);
+      color: white;
+      border: none;
+      margin-top: 30%;
+      margin-left: 20px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+    } 
+    .enunt {
+      margin-left: 7%;
+      color: black;
+    }
+   
+    .container {
+      position:relative;
+      justify-content: left;
+      height: 500px;
+      margin: 10px;
+    }
+
+    .container .content {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .container .content.contentRomana {
+      display: block;
+    }
+
+    .check {
+      position: relative;
+      width: 50px;
+      position: relative;
+      top: -5px;
+    }
+
+    .check::before {
+      position: absolute;
+      content: '';
+      width: 60px;
+      height: 25px;
+      background: #333;
+      border-radius: 25px;
+    }
+
+    .check:checked:before {
+      background: #00a1ff;
+    }
+
+    .check:after {
+      position: absolute;
+      content: '';
+      width: 25px;
+      height: 25px;
+      background: #fff;
+      border-radius: 25px;
+      transition: 0.25s;
+      border: 2px solid #333;
+      box-sizing: border-box;
+    }
+
+    .check:checked:after {
+      left: 35px;
+      border: 2px solid #00a1ff;
+    }
+
+    .check:checked ~ .content.contentRomana {
+      display: none;
+    }
+
+    .check:checked ~ .content.contentFranceza {
+      display: block;
+    }
+
+    .ro {
+      color: #333;
+      margin-right: 5px;
+    }
+
+    .fr {
+      color: #00a1ff;
+      margin-left: 13px;
+    }
+
+    .div-body {
+      display: flex;
+      justify-content: left;
+      min-height: 1000px;
+      background: #f2f2f2;
+      overflow: hidden;
+      position: relative;
+      font-family: roboto;
+    }
+    
+    .content-title {
+      font-size: 30px;
+    }
+
+    .marime {
+      font-size: 25px;
+    }
+    
+    .tabel {
+      margin-top: 20px;
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="poze-proiect-franceza/fhdfhdfdhfhdfhdfhdfhdfdchgfdh-removebg-preview.png">
+      <div>
+        <button class="button-1">
+          <a class="button-color" href="index.html">Les idefinis</a>
+        </button>
+        <button class="button-1">
+          <a class="button-color" href="despre-noi.html">Despre noi</a>
+        </button>
+      </div>
+    </div>
+    <div class="div-body">
+      <div class="container">
+            <span class="ro">Romana</span>
+            <input type="checkbox" class="check">
+            <span class="fr">Franceza</span>
+          <div class="content contentRomana">
+            <div class="content-container-title">
+              <div class="content-title" ><h1></h1></div>
+            </div>
+            <div class="content-1">
+              <div class="content-container-title">
+                <div class="content-title" ><h1><u>Adjectivele si pronumele nehotarate</u></h1></div>
+              </div>
+             <div class="marime">
+                <p><span class="enunt-1">Articolele</span> nehotărâte sunt <strong>un</strong> (masculin singular), <strong>une</strong> (feminin singular) și <strong>des</strong> (masculin, feminin plural). Articolul nehotărât este de acord ca număr și (pentru formele de singular) în gen cu substantivele pe care le modifică (vezi Substantive):</p>
+                <p><u><b>Exemple :</b></u></p>
+                <p>- Este un fruct.</p>
+                <p>- Este un măr.</p>
+                <p>- E brutar.</p>
+                <p>- Bună, aș dori o baghetă, cornuri și o brioșă, vă rog.</p>
+                <p>- Lucrează într-o brutărie mare.</p>
+              </div>
+            </div>
+            <div class="tabel">
+              <table bgcolor="black";>
+                <tr bgcolor="gray">
+                  <th><span></span></th>
+                  <th width="400px"; align="center">masculin</th>
+                  <th width="400px"; align="center">féminin</th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>singulier</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>un</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>une</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>pluriel</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>des</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>des</p>
+                    </th>
+              </table>
+            </div>
+          </div>
+        <div class="content contentFranceza">
+          <div class="content-container-title">
+            <div class="content-title" ><h1><u>Les indéfinis</u></h1></div>
+          </div>
+          <div class="content-1">
+            <div class="marime">
+              <p><span class="enunt-1">Les</span> articles indéfinis sont <strong>un</strong> (masculin singulier), <strong>une</strong> (féminin singulier) et <strong>des</strong> (masculin, féminin pluriel). L'article indéfini s'accorde en nombre et (pour les formes singulières) en genre avec les noms qu'ils modifient (voir Noms) :</p>
+              <p><u><b>Exemples :</b></u></p>
+              <p>- C'est un fruit.</p>
+              <p>- C'est une pomme.</p>
+              <p>- C'est un boulanger.</p>
+              <p>- Bonjour, je voudrais une baguette, des croissants et une brioche, s'il vous plait.</p>
+              <p>- Il travaille dans une grande boulangerie.</p>
+            </div>
+            <div class="tabel">
+              <table bgcolor="black";>
+                <tr bgcolor="gray">
+                  <th><span></span></th>
+                  <th width="400px"; align="center">masculin</th>
+                  <th width="400px"; align="center">féminin</th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>singulier</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>un</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>une</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>pluriel</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>des</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>des</p>
+                    </th>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
