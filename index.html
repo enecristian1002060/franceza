@@ -16,6 +16,15 @@
       background-image: linear-gradient(to right, #434343 0%, black 100%);
     }
 
+    p {
+      font-size: 25px;
+    }
+
+    html {
+      margin: 0px;
+      padding: 0px;
+    }
+
     .logo {
       padding-bottom: 10px;
       margin-left: 10px;
@@ -81,8 +90,10 @@
       margin-top: 20px;
     }
 
-    .container .content.contentRomana {
+    .container .content.contentFranceza {
       display: block;
+      margin: 0px;
+      padding: 0px;
     }
 
     .check {
@@ -122,41 +133,58 @@
       border: 2px solid #00a1ff;
     }
 
-    .check:checked ~ .content.contentRomana {
+    .check:checked ~ .content.contentFranceza {
       display: none;
     }
 
-    .check:checked ~ .content.contentFranceza {
+    .check:checked ~ .content.contentRomana {
       display: block;
     }
 
     .ro {
-      color: #333;
-      position: fixed;
-      right: 150px;
-      bottom: 170px;
-    }
-
-    .fr {
       color: #00a1ff;
       position: fixed;
       right: 10px;
       bottom: 170px;
     }
 
+    .fr {
+      color: #333;
+      position: fixed;
+      right: 150px;
+      bottom: 170px;
+    }
+
     .div-body {
       display: inline-block;
       justify-content: left;
-      min-height: 2000px;
+      min-height: 9000px;
       width: 100%;
       overflow: hidden;
       position: relative;
       font-family: roboto;
       background-image: linear-gradient(to left, #fc5c7d, #6a82fb);
+      margin: 0px;
+      padding: 0px;
     }
     
     .content-title {
       font-size: 30px;
+    }
+
+    .content-container-title {
+      margin-left: 30px;
+      margin-top: 20px;
+      margin-right: 30px;
+      padding: 20px;
+    }
+
+    .content-container-title-1 {
+      margin-left: 30px;
+      margin-top: 20px;
+      margin-right: 30px;
+      background-color: white;
+      padding: 20px;
     }
 
     .marime {
@@ -169,6 +197,21 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    .tabel-1 {
+      margin-top: 20px;
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom-style: solid;
+      border-top: none;
+      border-color: white;
+      padding-bottom: 10px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      margin-right: 0px;
     }
     
     .button-2 {
@@ -213,17 +256,92 @@
       background-color: rgb(28, 55, 110);
     }
 
-    .background-dreapta {
-      
-    }
-
     .titlu {
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 45px;
       margin-bottom: 30px;
+      margin-top: 20px;
     }
+
+    form{
+      margin-top:20px;
+    }
+    .quiz-container {
+      width: 80%;
+      margin: 0 auto;
+      border-style: solid;
+      border-color: white;
+      border-width: 2px;
+      border-radius: 10px;
+    }
+    
+    .question {
+      width:90%;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding:20px;
+      border-style: solid;
+      border-width: 2px;
+    }
+    .question:nth-child(odd){
+      margin-right:5%;
+    }
+    .question p{
+      font-weight: bold;
+    }
+    
+    .answers {
+      margin-bottom: 20px;
+    }
+    .answers label:not(:first-child){
+      border-top:1px solid #e0e0e0;
+    }
+    
+    label {
+      padding:10px 0;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    
+    .submit-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    
+    .result {
+      font-weight: bold;
+      font-size: 22px;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .d-flex{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    .vocabular-translate {
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -255,125 +373,6 @@
           <button class="button-3">
             <a class="button-color-1" href="#Pronume nehotărât">Pronume nehotărât</a>
           </button>
-          <div class="content contentRomana">
-            <div class="titlu">
-              <h1><b>Adjectivele si pronumele nehotarate</b></h1>
-            </div>
-            <div class="content-container-title">
-              <div id="Adjective nehotarate" class="content-title"><h1><u>1. Adjective nehotarate</u></h1></div>
-            </div>
-            <div class="content-1">
-              <div class="marime">
-                <p>Adjectivele nehotarate exprimă <b>cantitate</b>. Cantitatea se exprimă cu adjectivele nehotărâte <b>unii, mai mulți, unii, alții, fiecare și totul.</b></p>
-                <p><u>Exemples :</u></p>
-                <p>- În clasa mea, predau unor studenți italieni. (= un număr mic)</p>
-                <p>- În clasa mea, predau pentru mai mulți studenți spanioli. (= un număr mai mare)</p>
-                <p>- În clasa mea, predau unor studenți englezi și niște studenți americani. (parte dintr-un set)</p>
-                <p>- În clasa mea, predau pentru fiecare elev.(= un anumit elev)</p>
-                <p>- În clasa mea, predau pentru toți elevii. (= întregul)</p>
-                <p>- Predau pentru toată clasa. (= totalitatea indivizilor dintr-un set)</p>
-                <p><u>Atentie</u>!</p>
-                <p>Adjectivul <b>tout</b> este de acord ca gen și număr cu substantivul la care se referă.</p>
-              </div>
-              <div class="tabel">
-                <table bgcolor="black";>
-                  <tr bgcolor="gray">
-                    <th><span></span></th>
-                    <th width="400px"; align="center">singular</th>
-                    <th width="400px"; align="center">plural</th>
-                  </tr>
-                  <tr bgcolor="lightgrey"
-                      align="left">
-                      <th width="400px"; align="center">
-                        <p>masculin</p>
-                      </th>
-                      <th width="400px"; align="center">
-                        <p>toate</p>
-                      </th>
-                      <th width="400px"; align="center">
-                        <p>toate</p>
-                      </th>
-                  </tr>
-                  <tr bgcolor="lightgrey"
-                      align="left">
-                      <th width="400px"; align="center">
-                        <p>féminin</p>
-                      </th>
-                      <th width="400px"; align="center">
-                        <p>toate</p>
-                      </th>
-                      <th width="400px"; align="center">
-                        <p>toate</p>
-                      </th>
-                </table>
-              </div>
-              <div class="marime">
-              <p><u>Exemple</u>:</p>
-              <p>Predau pentru<b> toată clasa , pentru toata lume , pentru toti elevii.</b></p>
-              <div class="content-container-title">
-                <div id="Pronume nehotărât" class="content-title" ><h1><u>2. Pronume nehotărât</u></h1></div>
-              </div>
-              <p>Pronumele nehotărât înlocuiesc adjectivul nehotărât și substantivul .</p>
-              <div class="tabel">
-                <table bgcolor="black";>
-                  <tr bgcolor="gray">
-                    <th width="400px"; align="center">Cu adjectiv nehotărât + substantiv</th>
-                    <th width="400px"; align="center">Cu pronume nehotărât</th>
-                  </tr>
-                  <tr bgcolor="lightgrey"
-                      align="left">
-                      <th width="400px"; align="center">
-                        <p>Unii studenți sunt italieni, iar
-                          unii studenți sunt spanioli.</p>
-                      </th>
-                      <th width="400px"; align="center">
-                        <p><u>Unele</u> sunt italiene și
-                          <u>altele</u> spaniole.</p>
-                      </th>
-                  </tr>
-                  <tr bgcolor="lightgrey"
-                      align="left">
-                      <th width="400px"; align="center">
-                        <p>Mai mulți studenți sunt spanioli.</p>
-                      </th>
-                      <th width="400px"; align="center">
-                        <p><u>Mulți</u> sunt spanioli.</p>
-                      </th>
-                  </tr>
-                  <tr bgcolor="lightgrey"
-                      align="left">
-                      <th width="400px"; align="center">
-                        <p>Unii studenți sunt englezi, iar
-                          alții americani.</p>
-                      </th>
-                      <th width="400px"; align="center">
-                        <p><u>Unii</u> sunt englezi, iar
-                          <u>alții</u> americani.</p>
-                      </th>
-                  </tr>
-                  <tr bgcolor="lightgrey"
-                      align="left">
-                      <th width="400px"; align="center">
-                        <p>Fiecare student este studios.</p>
-                      </th>
-                      <th width="400px"; align="center">
-                        <p><u>Toți</u> sunt studioși.</p>
-                      </th>
-                  </tr>
-                  <tr bgcolor="lightgrey"
-                      align="left">
-                      <th width="400px"; align="center">
-                        <p>Toți studenții sunt studioși.</p>
-                      </th>
-                      <th width="400px"; align="center">
-                        <p><u>Toți</u> sunt studioși.</p>
-                      </th>
-                  </tr>
-                </table>
-              </div>
-              </div>
-            </div>
-          </div>
         <div class="content contentFranceza">
           <div class="titlu">
             <h1><b>Les indefinis</b></h1>
@@ -426,14 +425,13 @@
                     </th>
               </table>
             </div>
-            <div class="marime">
             <p><u>Exemples</u>!</p>
             <p>J'enseigne pour<b>toute la classe, à tout le monde, à tous les étudiants et à toutes</b> les étudiantes.</p>
             <div class="content-container-title">
               <div class="content-title" ><h1><u>2. Les pronoms indéfinis</u></h1></div>
             </div>
             <p>Les pronoms indéfinis remplacent l'adjectif indéfini et le nom.</p>
-            <div class="tabel">
+            <div class="tabel-1">
               <table bgcolor="black";>
                 <tr bgcolor="gray">
                   <th width="400px"; align="center">Avec adjectif indéfini + nom</th>
@@ -486,6 +484,356 @@
                     </th>
                     <th width="400px"; align="center">
                       <p><u>Tous</u> sont studieux.</p>
+                    </th>
+                </tr>
+              </table>
+            </div>
+            <div class="titlu">
+              <h1><b>Des Exercices</b></h1>
+            </div>
+            <div class="quiz-container">
+              <h1>ex 2/pg 81</h1>
+              <hr>
+              <form id="quiz-form">
+                <div class="d-flex">
+                  <div class="question">
+                    <p>1.Les romans de cet ecrivain sont excellents; j'en ai lu ............. .</p>
+                    <div class="answers">
+                      <label>
+                        <input type="radio" name="q1" value="a">
+                        plusieurs
+                      </label>
+                      <label>
+                        <input type="radio" name="q1" value="b">
+                        quelque chose
+                      </label>
+                      <label>
+                        <input type="radio" name="q1" value="c">
+                        on
+                      </label>
+                      <label>
+                        <input type="radio" name="q1" value="d">
+                        le meme
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="question">
+                    <p>2. Ils ont deux fils et ................ pratique un autre sport.</p>
+                    <div class="answers">
+                      <label>
+                        <input type="radio" name="q2" value="a">
+                        tous
+                      </label>
+                      <label>
+                        <input type="radio" name="q2" value="b">
+                        les uns les autres
+                      </label>
+                      <label>
+                        <input type="radio" name="q2" value="c">
+                        chacun
+                      </label>
+                      <label>
+                        <input type="radio" name="q2" value="d">
+                        quelqu'un
+                      </label>
+                    </div>
+                  </div>
+                  <div class="question">
+                    <p>3. Il va certainement inventer ............ pour se</p>
+                    <div class="answers">
+                      <label>
+                        <input type="radio" name="q3" value="a">
+                        quelque chose
+                      </label>
+                      <label>
+                        <input type="radio" name="q3" value="b">
+                        on
+                      </label>
+                      <label>
+                        <input type="radio" name="q3" value="c">
+                        quelqu'un
+                      </label>
+                      <label>
+                        <input type="radio" name="q3" value="d">
+                        plusieurs
+                      </label>
+                    </div>
+                  </div>
+                  <div class="question">
+                    <p>4. tirer de cette situation delicate. ....................... rient,................ pleurent.</p>
+                    <div class="answers">
+                      <label>
+                        <input type="radio" name="q4" value="a">
+                        le meme,quelqu'un
+                      </label>
+                      <label>
+                        <input type="radio" name="q4" value="b">
+                        plusieurs,quelque
+                      </label>
+                      <label>
+                        <input type="radio" name="q4" value="c">
+                        les uns,les autres
+                      </label>
+                      <label>
+                        <input type="radio" name="q4" value="d">
+                        on,tous
+                      </label>
+                    </div>
+                  </div>
+                  <div class="question">
+                    <p>5. Vous avez exprime votre point de vue et ................ ont approuve votre decision.</p>
+                    <div class="answers">
+                      <label>
+                        <input type="radio" name="q5" value="a">
+                        quelque chose
+                      </label>
+                      <label>
+                        <input type="radio" name="q5" value="b">
+                        tous
+                      </label>
+                      <label>
+                        <input type="radio" name="q5" value="c">
+                        plusieurs
+                      </label>
+                      <label>
+                        <input type="radio" name="q5" value="d">
+                        chacun
+                      </label>
+                    </div>
+                  </div>
+                  <div class="question">
+                    <p>6. Dans ce magasin ................... vend des bicyclettes.</p>
+                    <div class="answers">
+                      <label>
+                        <input type="radio" name="q6" value="a">
+                        chose
+                      </label>
+                      <label>
+                        <input type="radio" name="q6" value="b">
+                        plusieurs
+                      </label>
+                      <label>
+                        <input type="radio" name="q6" value="c">
+                        tous
+                      </label>
+                      <label>
+                        <input type="radio" name="q6" value="d">
+                        on
+                      </label>
+                    </div>
+                  </div>
+                  <div class="question">
+                    <p>7. As-tu trouve ................ pour t'aider?</p>
+                    <div class="answers">
+                      <label>
+                        <input type="radio" name="q7" value="a">
+                        quelqu'un
+                      </label>
+                      <label>
+                        <input type="radio" name="q7" value="b">
+                        quelque
+                      </label>
+                      <label>
+                        <input type="radio" name="q7" value="c">
+                        plusieurs
+                      </label>
+                      <label>
+                        <input type="radio" name="q7" value="d">
+                        tous
+                      </label>
+                    </div>
+                  </div>
+                  <div class="question">
+                    <p>8. Il n'a pas du tout change,il est reste ............</p>
+                    <div class="answers">
+                      <label>
+                        <input type="radio" name="q8" value="a">
+                        les uns les autres
+                      </label>
+                      <label>
+                        <input type="radio" name="q8" value="b">
+                        on
+                      </label>
+                      <label>
+                        <input type="radio" name="q8" value="c">
+                        le meme
+                      </label>
+                      <label>
+                        <input type="radio" name="q8" value="d">
+                        tous
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+              
+              <div class="result" id="result"></div>
+              </div>
+            <script>
+              const quizForm = document.getElementById('quiz-form');
+              const resultDiv = document.getElementById('result');
+              const correctAnswers = ['a', 'c','a','c','b','d','a','c'];
+              
+              quizForm.addEventListener('submit', e => {
+                e.preventDefault();
+                
+                let score = 0;
+                const userAnswers = [quizForm.q1.value,quizForm.q2.value,quizForm.q3.value,quizForm.q4.value,quizForm.q5.value,quizForm.q6.value,quizForm.q7.value,quizForm.q8.value];
+                userAnswers.forEach((answer, index) => {
+                  if (answer === correctAnswers[index]) {
+                    score += 1;
+                  }
+                });
+              
+                resultDiv.innerHTML = `Your score is ${score}/${correctAnswers.length}`;
+              });
+          </script>
+          </div>
+          <div class="vocabular-translate">
+            <div>
+              <div class="content-container-title-1">
+                <div class="content-title" ><h1><u>Vocabulaire</u></h1></div>
+                <h2><p>quelque chose=ceva</p></h2>
+                <h2><p>tous=toate</p></h2>
+                <h2><p>plusieurs=mai multe</p></h2>
+                <h2><p>les uns les autres=reciproc</p></h2>
+                <h2><p>chacun=fiecare</p></h2>
+                <h2><p>on=noi</p></h2>
+                <h2><p>le meme=aceeasi</p></h2>
+                <h2><p>quelqu'un=cineva</p></h2>
+                <h2><p></p></h2>
+              </div>
+            </div>
+            <div>
+              <div class="content-container-title-1">
+                <div class="content-title" ><h1><u>Traductions de phrases</u></h1></div>
+                <h2><p>1.Romanele acestui scriitor sunt excelente; Am citit-o .............</p></h2>
+                <h2><p>2. Au doi fii și ................ joacă un alt sport.</p></h2>
+                <h2><p>3. Cu siguranță va inventa ............ să</p></h2>
+                <h2><p>4. iesi din aceasta situatie delicata. ....................... râde,................ plânge.</p></h2>
+                <h2><p>5. V-ați exprimat punctul de vedere și ................ ați aprobat decizia dvs.</p></h2>
+                <h2><p>6. În acest magazin ................... vinde biciclete.</p></h2>
+                <h2><p>7. Ai găsit ................ să te ajute?</p></h2>
+                <h2><p>8. Il n'a pas du tout change,il est reste ............</p></h2>
+                <h2><p></p></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content contentRomana">
+          <div class="titlu">
+            <h1><b>Adjectivele si pronumele nehotarate</b></h1>
+          </div>
+          <div class="content-container-title">
+            <div id="Adjective nehotarate" class="content-title"><h1><u>1. Adjective nehotarate</u></h1></div>
+          </div>
+          <div class="content-1">
+            <div class="marime">
+              <p>Adjectivele nehotarate exprimă <b>cantitate</b>. Cantitatea se exprimă cu adjectivele nehotărâte <b>unii, mai mulți, unii, alții, fiecare și totul.</b></p>
+              <p><u>Exemples :</u></p>
+              <p>- În clasa mea, predau unor studenți italieni. (= un număr mic)</p>
+              <p>- În clasa mea, predau pentru mai mulți studenți spanioli. (= un număr mai mare)</p>
+              <p>- În clasa mea, predau unor studenți englezi și niște studenți americani. (parte dintr-un set)</p>
+              <p>- În clasa mea, predau pentru fiecare elev.(= un anumit elev)</p>
+              <p>- În clasa mea, predau pentru toți elevii. (= întregul)</p>
+              <p>- Predau pentru toată clasa. (= totalitatea indivizilor dintr-un set)</p>
+              <p><u>Atentie</u>!</p>
+              <p>Adjectivul <b>tout</b> este de acord ca gen și număr cu substantivul la care se referă.</p>
+            </div>
+            <div class="tabel">
+              <table bgcolor="black";>
+                <tr bgcolor="gray">
+                  <th><span></span></th>
+                  <th width="400px"; align="center">singular</th>
+                  <th width="400px"; align="center">plural</th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>masculin</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>toate</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>toate</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>féminin</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>toate</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p>toate</p>
+                    </th>
+              </table>
+            </div>
+            <div class="marime">
+            <p><u>Exemple</u>:</p>
+            <p>Predau pentru<b> toată clasa , pentru toata lume , pentru toti elevii.</b></p>
+            <div class="content-container-title">
+              <div id="Pronume nehotărât" class="content-title" ><h1><u>2. Pronume nehotărât</u></h1></div>
+            </div>
+            <p>Pronumele nehotărât înlocuiesc adjectivul nehotărât și substantivul .</p>
+            <div class="tabel">
+              <table bgcolor="black";>
+                <tr bgcolor="gray">
+                  <th width="400px"; align="center">Cu adjectiv nehotărât + substantiv</th>
+                  <th width="400px"; align="center">Cu pronume nehotărât</th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Unii studenți sunt italieni, iar
+                        unii studenți sunt spanioli.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Unele</u> sunt italiene și
+                        <u>altele</u> spaniole.</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Mai mulți studenți sunt spanioli.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Mulți</u> sunt spanioli.</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Unii studenți sunt englezi, iar
+                        alții americani.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Unii</u> sunt englezi, iar
+                        <u>alții</u> americani.</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Fiecare student este studios.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Toți</u> sunt studioși.</p>
+                    </th>
+                </tr>
+                <tr bgcolor="lightgrey"
+                    align="left">
+                    <th width="400px"; align="center">
+                      <p>Toți studenții sunt studioși.</p>
+                    </th>
+                    <th width="400px"; align="center">
+                      <p><u>Toți</u> sunt studioși.</p>
                     </th>
                 </tr>
               </table>
