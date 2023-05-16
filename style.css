@@ -1,18 +1,19 @@
 .sidebar {
   position: fixed;
   height: 100%;
-  width: 260px;
+  width: 16%;
   background: #11101d;
   padding: 15px;
   z-index: 99;
 }
 .logo {
-  font-size: 25px;
-  padding: 0 15px;
+  font-size: 2vw;
+  margin: 0px;
 }
 .sidebar a {
   color: #fff;
   text-decoration: none;
+  display: block;
 }
 .menu-content {
   position: relative;
@@ -31,22 +32,23 @@
   transition: all 0.4s ease;
 }
 .submenu-active .menu-items {
-  transform: translateX(-56%);
+  transform: translateX(-60%);
+  margin-left: 4%;
 }
 .menu-title {
   color: #fff;
-  font-size: 14px;
-  padding: 15px 20px;
+  font-size: 2vw;
 }
 .item a,
 .submenu-item {
-  padding: 16px;
+  padding-left: 2%;
+  font-size: 2vw;
   display: inline-block;
   width: 100%;
   border-radius: 12px;
 }
 .item i {
-  font-size: 12px;
+  font-size: 2vw;
 }
 .item a:hover,
 .submenu-item:hover,
@@ -65,7 +67,7 @@
   height: 100%;
   width: 100%;
   top: 0;
-  right: calc(-100% - 26px);
+  right: calc(-100% - 16%);
   height: calc(100% + 100vh);
   background: #11101d;
   display: none;
@@ -82,8 +84,8 @@
 }
 .navbar,
 .main {
-  left: 260px;
-  width: calc(100% - 260px);
+  left: 16%;
+  width: calc(100% - 16%);
   transition: all 0.5s ease;
   z-index: 1000;
 }
@@ -95,7 +97,7 @@
 .navbar {
   position: fixed;
   color: #fff;
-  padding: 15px 20px;
+  padding: 10px 20px;
   font-size: 25px;
   background: #4070f4;
   cursor: pointer;
@@ -114,13 +116,14 @@
 }
 .main h1 {
   display: inline-block;
-  padding-bottom: 10px;
-  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-family: 'Syncopate', sans-serif;
   text-transform: uppercase;
   background: radial-gradient( circle farthest-corner at center center, #ccc, #333 ) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 3vw;
 }
 
 *{
@@ -136,18 +139,13 @@ body{
 }
 
 p {
-  font-size: 25px;
+  font-size: 2vw;
   margin-left: 10px;
 }
 
 html {
   margin: 0px;
   padding: 0px;
-}
-
-.logo {
-  padding-bottom: 10px;
-  margin-left: 10px;
 }
 
 .button:hover {
@@ -293,14 +291,19 @@ html {
 
 .content-container-title {
   margin-top: 20px;
-  padding: 20px;
-  font-size: 45px;
+  padding: 10px;
   text-transform: uppercase;
   background: linear-gradient(to left,#333,#000000) no-repeat;
   border-style: solid;
   border-color: white;
   border-left: none;
   border-right: none;
+}
+
+.content-container-title h1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .content-container-title-1 {
@@ -317,23 +320,25 @@ html {
 
 .tabel {
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .tabel-1 {
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
-  margin-left: 0px;
   margin-bottom: 0px;
-  margin-right: 0px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .button-2 {
@@ -379,20 +384,22 @@ html {
 }
 
 .titlu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 45px;
+  font-size: 3vw;
   text-transform: uppercase;
   background: radial-gradient(
-      circle farthest-corner at center center,
-      #333,
-      #000000
-   ) no-repeat;
-   border-style: solid;
-   border-color: white;
-   border-left: none;
-   border-right: none;
+    circle farthest-corner at center center,
+    #333,
+    #000000
+ ) no-repeat;
+  border-style: solid;
+  border-color: white;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .titlu-1 {
