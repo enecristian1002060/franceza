@@ -3,7 +3,7 @@
   height: 100%;
   width: 16%;
   background: #11101d;
-  padding: 5px 15px 15px 15px;
+  padding: 10px 15px 15px 15px;
   z-index: 99;
 }
 .logo {
@@ -99,7 +99,7 @@
 .navbar {
   position: fixed;
   color: #fff;
-  padding: 10px 20px;
+  padding: 1% 1%;
   font-size: 25px;
   background: #4070f4;
   cursor: pointer;
@@ -448,6 +448,19 @@ form{
 }
 .question p{
   font-weight: bold;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+.answers p{
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8vw;
+  font-weight: normal;
 }
 
 .answers {
@@ -464,7 +477,8 @@ label {
 }
 
 input[type="radio"] {
-  margin-right: 10px;
+  margin-right: 2%;
+  width: 3%;
 }
 
 .submit-btn {
@@ -511,4 +525,31 @@ input[type="radio"] {
 
 label p {
   font-size: 1vw;
+}
+
+.traducere {
+  color: white;
+  position: absolute;
+  left: 0px;
+  bottom: -100%;
+  background: #4070f4;
+  padding: 5% 10%;
+  border-radius: 10px;
+  visibility: hidden;
+  white-space: nowrap;
+  z-index: 100;
+  font-size: 1.4vw;
+}
+
+.pozition:active .traducere {
+  visibility: visible;
+  text-decoration: none;
+}
+
+.pozition {
+  position: relative;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
 }
