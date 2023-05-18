@@ -33,11 +33,14 @@
 }
 .submenu-active .menu-items {
   transform: translateX(-60%);
-  margin-left: 4%;
+  margin-left: 2%;
 }
 .menu-title {
   color: #fff;
   font-size: 2vw;
+  white-space: nowrap;
+  margin-left: 1%;
+  padding: 5px 0px;
 }
 .item a,
 .submenu-item {
@@ -59,10 +62,10 @@
 }
 .submenu-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   color: #fff;
   cursor: pointer;
+  justify-content: space-between;
 }
 .submenu {
   position: absolute;
@@ -81,9 +84,7 @@
   border-radius: 12px;
   cursor: pointer;
 }
-.submenu .menu-title i {
-  margin-right: 10px;
-}
+
 .navbar,
 .main {
   left: 16%;
